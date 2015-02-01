@@ -21,7 +21,7 @@ import java.util.Random;
 import javax.swing.JOptionPane;
 
 @SuppressWarnings("serial")
-public class snakeCanvas extends Canvas implements Runnable,KeyListener {
+public class SnakeCanvas extends Canvas implements Runnable,KeyListener {
 	 
 	private final int BOX_HEIGHT = 15;		//This shows the size of the boxes
 	private final int BOX_WIDTH = 15;		//This shows the size of the boxes
@@ -41,6 +41,8 @@ public class snakeCanvas extends Canvas implements Runnable,KeyListener {
 	private boolean isInMenu = true;
 	private boolean isAtEndGame = false;
 	private boolean won = false;
+	
+	
 	
 	public void paint(Graphics g){
 		if(runThread == null){
@@ -98,7 +100,7 @@ public class snakeCanvas extends Canvas implements Runnable,KeyListener {
 	public void DrawMenu(Graphics g){
 		if(this.menuImage == null){
 			try{
-				URL imagePath = snakeCanvas.class.getResource("SnakeLogo.png");
+				URL imagePath = SnakeCanvas.class.getResource("SnakeLogo.png");
 				this.menuImage = Toolkit.getDefaultToolkit().getImage(imagePath);
 			
 			}

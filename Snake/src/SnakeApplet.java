@@ -3,13 +3,13 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 
 @SuppressWarnings("serial")
-public class snakeApplet extends Applet{
+public class SnakeApplet extends Applet{
 
-	private snakeCanvas c;
+	private SnakeCanvas c;
 	
 	public void init(){
 		
-		c= new snakeCanvas();
+		c= new SnakeCanvas();
 		c.setPreferredSize(new Dimension(640,480));
 		c.setVisible(true);
 		c.setFocusable(true);
