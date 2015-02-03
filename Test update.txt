@@ -1,8 +1,24 @@
 Test uploading files. :)
 
 
+<<<<<<< .mine
 Role description:
 
+=======
+Role description:
+>>>>>>> .r22
+
+<<<<<<< .mine
+
+Petar:
+
+1. Wrote parts 1 and 2;
+
+2. Modified the game to include 'rotten apples';
+
+3. Converted the game from a Java applet to a Java application;
+
+=======
 
 Petar:
 1. Wrote parts 1 and 2;
@@ -11,22 +27,52 @@ Petar:
 
 3. Converted the game from a Java applet to a Java application;
 
+>>>>>>> .r22
 4. Generated the runnable snake.jar file;
 
 5. Provided support to his teammates whenever he could.
 
-How the rotten apples work:
-The rotten apples are black in color and they appear every time the snake eats a red apple and stay on the grid till the end of the game. 
-If the snake eats a rotten apple then it dies. Every time the snake eats a red apple, a new random point is generated. 
-It (the point) needs to pass a check that it does not belong on a grid tile that contains the snake. This first point becomes the rotten apple.
-then another random point is generated for the red apples. It has to pass a check that it does not belong to the snake or to the rotten apples. 
-All rotten apples are sotred in a linked list of type point (like the snake).
 
+
+How the rotten apples work:
+The rotten apples are black in color and they appear every 
+time the snake eats a red apple and stay on the grid till the end of the game. 
+
+<<<<<<< .mine
+If the snake eats a rotten apple then it dies. Every time the snake eats a red apple,
+a new random point is generated. 
+It (the point) needs to pass a check that it does not
+belong on a grid tile that contains the snake. This first point becomes the rotten apple.
+
+then another random point is generated for the red apples. It has to pass a check that it 
+does not belong to the snake or to the rotten apples. 
+All rotten apples are sotred in a linked list
+of type point (like the snake).
+
+COnversion to Java application
+=======
 Conversion to Java application 
+>>>>>>> .r22
+<<<<<<< .mine
+The class SnakeGame was added.
+It creates a Jframe for the application and put the applet inside it and provides basic directions
+to the frame (position and close on exit).
+It also contains a main method which makes the application runnable.
+
+=======
 The class SnakeGame was added. It creates a Jframe for the application and put the applet inside it and provides basic directions to the frame (position and close on exit).
 It also contains a main method which makes the application runnable.
 
 Ivan Krastev Wrote parts 5-6
 Part 5 : Implementing Growth and Resetting Games. In this part when the snake is gathering fruit actually grows, reset fruit to random positions, and make it so the game resets when you meet conditions that count as losses.
 Part 6 : Double Buffering and Finalizing. In this part of our snake tutorials I implemented double buffering in order to fix the flashing issue, add a restriction on turning so we don't crash into ourselves, reposition the starting location, fix a few bugs, and add a score mechanism.
-I take a part of testing the game.
+I take a part of testing the game.>>>>>>> .r22
+
+Adelina:
+1. Initiated the first contact between all team members by writing e-mails and making a group chat in Skype.
+2. Keeping track of activities, schedules and dead-line for the teamwork and for the public defence.
+3. Fixed the double buffering.
+	The method of double buffering previously implemented did not solve any flashing problems.
+	In response to this I initialize a completly different method for double buffering, which involves
+	overriding the "update" method.
+4. Implemantation of a high score that saves itself when the high score is breached.
