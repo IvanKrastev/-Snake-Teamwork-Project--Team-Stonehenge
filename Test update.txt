@@ -29,4 +29,4 @@ It also contains a main method which makes the application runnable.
 Ivan Krastev Wrote parts 5-6
 Part 5 : Implementing Growth and Resetting Games. In this part when the snake is gathering fruit actually grows, reset fruit to random positions, and make it so the game resets when you meet conditions that count as losses.
 Part 6 : Double Buffering and Finalizing. In this part of our snake tutorials I implemented double buffering in order to fix the flashing issue, add a restriction on turning so we don't crash into ourselves, reposition the starting location, fix a few bugs, and add a score mechanism.
-I prepared simple picture for logo of our Snake game and I take a part of testing the game.
+I take a part of testing the game.
