@@ -8,60 +8,34 @@ Role description:
 Role description:
 >>>>>>> .r22
 
-<<<<<<< .mine
+<<<<<<< .
+
 
 Petar:
 
-1. Wrote parts 1 and 2;
-
+1. Parts 1 and 2; created the basic structure of the program - generated the SnakeCanvas class, the the Direction class, and the TileType class which became depricated.
+Direction class included: directions for the movement of the snake;
+The SnakeCanvas included: list of points for the snake;foundation for the grid - early dimensions + draw grid method;methods (early versionS) of drawSnake, drawFruit, run, paint methods
 2. Modified the game to include 'rotten apples';
 
+How the rotten apples work:
+The rotten apples are black in color and they appear every time the snake eats a red apple and stay on the grid till the end of the game. 
+
+
+If the snake eats a rotten apple then it dies. Every time the snake eats a red apple, a new random point is generated. 
+It (the point) needs to pass a check that it does not belong on a grid tile that contains the snake. This first point becomes the rotten apple. Then another random point is generated for the red apples. It has to pass a check that it does not belong to the snake or to the rotten apples. 
+All rotten apples are sotred in a linked list of type point (like the snake).
+
 3. Converted the game from a Java applet to a Java application;
+The class SnakeGame was added: It creates a Jframe for the application and put the applet inside it and provides basic directions
+to the frame (position and close on exit).
+It also contains a main method which makes the application runnable.
 
-=======
-
-Petar:
-1. Wrote parts 1 and 2;
-
-2. Modified the game to include 'rotten apples';
-
-3. Converted the game from a Java applet to a Java application;
-
->>>>>>> .r22
 4. Generated the runnable snake.jar file;
 
 5. Provided support to his teammates whenever he could.
 
 
-
-How the rotten apples work:
-The rotten apples are black in color and they appear every 
-time the snake eats a red apple and stay on the grid till the end of the game. 
-
-<<<<<<< .mine
-If the snake eats a rotten apple then it dies. Every time the snake eats a red apple,
-a new random point is generated. 
-It (the point) needs to pass a check that it does not
-belong on a grid tile that contains the snake. This first point becomes the rotten apple.
-
-then another random point is generated for the red apples. It has to pass a check that it 
-does not belong to the snake or to the rotten apples. 
-All rotten apples are sotred in a linked list
-of type point (like the snake).
-
-COnversion to Java application
-=======
-Conversion to Java application 
->>>>>>> .r22
-<<<<<<< .mine
-The class SnakeGame was added.
-It creates a Jframe for the application and put the applet inside it and provides basic directions
-to the frame (position and close on exit).
-It also contains a main method which makes the application runnable.
-
-=======
-The class SnakeGame was added. It creates a Jframe for the application and put the applet inside it and provides basic directions to the frame (position and close on exit).
-It also contains a main method which makes the application runnable.
 
 Ivan Krastev Wrote parts 5-6
 Part 5 : Implementing Growth and Resetting Games. In this part when the snake is gathering fruit actually grows, reset fruit to random positions, and make it so the game resets when you meet conditions that count as losses.
