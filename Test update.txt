@@ -1,1 +1,22 @@
 Test uploading files. :)
+
+
+Role description:
+
+Petar:
+1. Wrote parts 1 and 2;
+2. Modified the game to include 'rotten apples';
+3. Converted the game from a Java applet to a Java application;
+4. Generated the runnable snake.jar file;
+5. Provided support to his teammates whenever he could.
+
+How the rotten apples work:
+The rotten apples are black in color and they appear every time the snake eats a red apple and stay on the grid till the end of the game. 
+If the snake eats a rotten apple then it dies. Every time the snake eats a red apple, a new random point is generated. 
+It (the point) needs to pass a check that it does not belong on a grid tile that contains the snake. This first point becomes the rotten apple.
+then another random point is generated for the red apples. It has to pass a check that it does not belong to the snake or to the rotten apples. 
+All rotten apples are sotred in a linked list of type point (like the snake).
+
+COnversion to Java application
+The class SnakeGame was added. It creates a Jframe for the application and put the applet inside it and provides basic directions to the frame (position and close on exit).
+It also contains a main method which makes the application runnable.
