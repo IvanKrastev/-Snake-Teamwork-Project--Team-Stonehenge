@@ -1,15 +1,4 @@
-Test uploading files. :)
-
-
-<<<<<<< .mine
-Role description:
-
-=======
-Role description:
->>>>>>> .r22
-
-<<<<<<< .
-
+Members Selph Introduction
 
 Petar:
 
@@ -37,20 +26,43 @@ It also contains a main method which makes the application runnable.
 
 
 
-Ivan Krastev Wrote parts 5-6
+
+Ivan Krastev:
+
+Wrote parts 5-6
 Part 5 : Implementing Growth and Resetting Games. In this part when the snake is gathering fruit actually grows, reset fruit to random positions, and make it so the game resets when you meet conditions that count as losses.
 Part 6 : Double Buffering and Finalizing. In this part of our snake tutorials I implemented double buffering in order to fix the flashing issue, add a restriction on turning so we don't crash into ourselves, reposition the starting location, fix a few bugs, and add a score mechanism.
 I take a part of testing the game.>>>>>>> .r22
 
+
+
 Adelina:
+
 1. Initiated the first contact between all team members by writing e-mails and making a group chat in Skype.
 2. Keeping track of activities, schedules and dead-line for the teamwork and for the public defence.
 3. Fixed the double buffering.
-	The method of double buffering previously implemented did not solve any flashing problems.
+        The method of double buffering previously implemented did not solve any flashing problems.
 	In response to this I initialize a completly different method for double buffering, which involves
 	overriding the "update" method.
 4. Implemantation of a high score that saves itself when the high score is breached.
 
-Angel Dzhambazov Wrote the Menu part, with everything around it - picture, lables fixing bugs etc.
+
+
+
+Angel Dzhambazov:
+
+Wrote the Menu part, with everything around it - picture, lables fixing bugs etc.
 Added a "level" function. The more the snake grows the faster it travels. 
-Fixed a few other bugs. 
+Fixed a few other bugs.
+
+
+
+
+Aneta Marinova:
+Work on Methods Move, Paint, KeyPressed,created a classes Direction and snake.Applet.
+
+
+
+
+Tanya Delcheva:
+Made the powerpoint presentation of the game. Keep in touch all the time with all StoneHenge members.
