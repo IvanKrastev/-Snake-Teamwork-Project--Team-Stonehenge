@@ -34,6 +34,7 @@ public class SnakeCanvas extends Canvas implements Runnable,KeyListener {
 	private Thread runThread; 				// This method make multitasking of the program
 	
 	private int score= 0;
+	private int level = 150;
 	public String highScore="";
 	
 	private Image menuImage = null;
@@ -100,7 +101,7 @@ public class SnakeCanvas extends Canvas implements Runnable,KeyListener {
 	public void DrawMenu(Graphics g){
 		if(this.menuImage == null){
 			try{
-				URL imagePath = SnakeCanvas.class.getResource("SnakeLogo.png");
+				URL imagePath = SnakeCanvas.class.getResource("StonehengeBeta.png");
 				this.menuImage = Toolkit.getDefaultToolkit().getImage(imagePath);
 			
 			}
@@ -135,6 +136,7 @@ public class SnakeCanvas extends Canvas implements Runnable,KeyListener {
 	
 	public void GenerateDefaultSnake(){
 		score = 0;
+		level = 150;
 		snake.clear();
 		
 		snake.add(new Point(0, 2));
@@ -172,6 +174,7 @@ public class SnakeCanvas extends Canvas implements Runnable,KeyListener {
 		if(newPoint.equals(fruit)){
 			//the snake has hit fruit
 			score += 10;
+			level -=10;
 			Point addPoint = (Point) newPoint.clone();
 			
 			switch(direction){
@@ -288,6 +291,9 @@ public class SnakeCanvas extends Canvas implements Runnable,KeyListener {
 	}
 	
 	public void DrawGrid(Graphics g){
+		if (isInMenu==false) {
+			
+		
 		// drawing outside rectangle
 		g.drawRect(0, 0, GRID_WIDTH * BOX_WIDTH , GRID_HEIGTH * BOX_HEIGHT);
 		// drawing the vertical lines
@@ -298,22 +304,27 @@ public class SnakeCanvas extends Canvas implements Runnable,KeyListener {
 		for (int y= BOX_HEIGHT; y < GRID_HEIGTH *BOX_HEIGHT; y+=BOX_HEIGHT) {
 			g.drawLine(0, y,GRID_WIDTH * BOX_WIDTH , y);
 		}
+		}
 	
 	
 	}
 	
 	public void DrawSnake(Graphics g){
+		if (isInMenu==false) {
 		g.setColor(Color.GREEN);
 		for (Point p: snake) {
 			g.fillRect(p.x * BOX_WIDTH, p.y * BOX_HEIGHT, BOX_WIDTH, BOX_HEIGHT);
 		}
 		g.setColor(Color.BLACK);
+		}
 	}
 	
 	public void DrawFruit(Graphics g){
+		if (isInMenu==false) {
 		g.setColor(Color.RED);
 		g.fillOval(fruit.x * BOX_WIDTH, fruit.y * BOX_HEIGHT, BOX_WIDTH, BOX_HEIGHT);
 		g.setColor(Color.BLACK);
+		}
 	}
 	
 	public void DrawRottenApples (Graphics g){
@@ -361,7 +372,7 @@ public class SnakeCanvas extends Canvas implements Runnable,KeyListener {
 			
 			try{
 				Thread.currentThread();
-				Thread.sleep(100);
+				Thread.sleep(level);
 			}
 			catch(Exception e){
 				

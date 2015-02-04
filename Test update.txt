@@ -50,3 +50,7 @@ Adelina:
 	In response to this I initialize a completly different method for double buffering, which involves
 	overriding the "update" method.
 4. Implemantation of a high score that saves itself when the high score is breached.
+
+Angel Dzhambazov Wrote the Menu part, with everything around it - picture, lables fixing bugs etc.
+Added a "level" function. The more the snake grows the faster it travels. 
+Fixed a few other bugs. 
