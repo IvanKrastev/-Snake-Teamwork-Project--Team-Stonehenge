@@ -240,7 +240,7 @@ import java.awt.Canvas;
 				return; 
 				
 			}
-			// if we reach this point in code, we're still good
+			
 			snake.push(newPoint);
 			
 		}
@@ -331,9 +331,11 @@ import java.awt.Canvas;
 		}
 		
 		public void DrawRottenApples (Graphics g){
+			if (isInMenu==false) {
 			g.setColor(Color.BLACK);
 			for (Point p: rottenApples) {
 				g.fillOval(p.x * BOX_WIDTH, p.y * BOX_HEIGHT, BOX_WIDTH, BOX_HEIGHT);
+				}
 			}
 		}
 		
