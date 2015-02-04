@@ -13,7 +13,7 @@ Role description:
 
 Petar:
 
-1. Parts 1 and 2; created the basic structure of the program - generated the SnakeCanvas class, the the Direction class, and the TileType class which became depricated.
+1. Parts 1 and 2; created the basic structure of the program - generated the SnakeCanvas class, the Direction class, and the TileType class which became depricated.
 Direction class included: directions for the movement of the snake;
 The SnakeCanvas included: list of points for the snake;foundation for the grid - early dimensions + draw grid method;methods (early versionS) of drawSnake, drawFruit, run, paint methods
 2. Modified the game to include 'rotten apples';
