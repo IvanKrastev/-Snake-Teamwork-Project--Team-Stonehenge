@@ -1,3 +1,4 @@
+package game;
 
 public class Direction {
 	public static final int NO_DIRECTION = 0;

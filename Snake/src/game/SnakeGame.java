@@ -1,5 +1,5 @@
+package game;
 import java.awt.*;
-
 import javax.swing.JFrame;
 
 public class SnakeGame {
@@ -18,7 +18,8 @@ public class SnakeGame {
 		frame.setLocationRelativeTo(null);
 		frame.setTitle("Snake");
 	}
-  public static void main(String[] args) {
-	  SnakeGame game = new SnakeGame();
-  }
+	
+	public static void main(String[] args) {
+		SnakeGame game = new SnakeGame();
+	}
 }
